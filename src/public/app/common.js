@@ -1,6 +1,7 @@
 $(() => {
     $('#navbar').load('../components/navbar.html',loginIfNeeded)
     $('#content').load('../components/allPosts.html')
+    $('#footer').load('../components/footer.html')
  })
 
  function loginIfNeeded(){
