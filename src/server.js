@@ -15,7 +15,7 @@ app.use('/api/posts/comments', commentsRoute)
 app.use('/',express.static(__dirname + '/public'))
 
 
-db.sync()
+db.sync({force : true})
     .then(() => {
         app.listen(8383, () => {
             console.log('server started on http://localhost:8383')
